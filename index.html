@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xylum Foundation — Building the Future of Linux Graphics</title>
+  <meta name="description" content="The Xylum Foundation is dedicated to creating safe, modern, and open-source infrastructure for the Linux ecosystem.">
+  <link rel="icon" type="image/svg+xml" href="/icons/Xylum-D.svg">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+
+  <xylum-header></xylum-header>
+
+  <main>
+    <section class="hero">
+      <h1>Building the Future of <span>Linux Graphics</span></h1>
+      <p>The Xylum Foundation is dedicated to creating safe, modern, and open-source infrastructure for the Linux ecosystem, starting with a complete rewrite of the X11 display server.</p>
+      <div>
+        <a href="/releases.html" class="btn">Releases</a>
+        <a href="/about.html" class="btn btn-secondary">About us</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>For decades, the Linux desktop has relied on legacy codebases written in unsafe languages. We believe it's time for a change. The Xylum Foundation exists to build the next generation of display servers, window managers, and core desktop infrastructure using <strong>Rust</strong>, ensuring memory safety without sacrificing performance.</p>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid-container">
+        <div class="card">
+          <span class="status active">Active Development</span>
+          <h3>Xylum</h3>
+          <p>A modern X11 display server, written from scratch in Rust. Capable of running classic X11 applications natively while leveraging modern graphics APIs.</p>
+          <a href="https://github.com/Xylum-Foundation/Xylum" class="btn btn-secondary" style="margin: 0; text-align: center;">View Repository</a>
+        </div>
+
+        <div class="card">
+          <span class="status archived">Archived</span>
+          <h3>YComp (Y.Org)</h3>
+          <p>An experimental Wayland compositor. It served as the proving ground for our Rust architecture and Vulkan rendering techniques before we pivoted to X11.</p>
+          <a href="https://github.com/XLS-Foundation/YComp" class="btn btn-secondary" style="margin: 0; text-align: center;">View Repository</a>
+        </div>
+
+        <div class="card">
+          <span class="status planning">Planning Phase</span>
+          <h3>Xay11</h3>
+          <p>Wayland application support for X11 Servers, built using YComp's Rust codebase.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <xylum-footer></xylum-footer>
+
+</body>
+</html>
