@@ -1,13 +1,6 @@
 class XylumFooter extends HTMLElement {
   connectedCallback() {
-    const lastMod = document.lastModified;
-    const dateObj = new Date(lastMod);
-    
-    const dateStr = dateObj.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
-    });
+    const dateStr = "Oct 30, 2026";
 
     this.innerHTML = `
       <footer>
